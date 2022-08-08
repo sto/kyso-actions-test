@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Job to push report to kyso
     steps:
+      - name: Clone repo step
+        uses: actions/checkout@v3
       - name: Kyso push step
         id: kyso-push
         uses: sto/kyso-push-action@v1
