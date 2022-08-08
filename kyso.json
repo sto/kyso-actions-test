@@ -1,0 +1,12 @@
+{
+  "main": "README.md",
+  "title": "GITHUB TEST",
+  "description": "Report uploaded from GITHUB using our action",
+  "organization": "sergio-talens-oliag",
+  "team": "test",
+  "tags": [],
+  "type": "markdown",
+  "authors": [
+    "sto@kyso.io"
+  ]
+}
