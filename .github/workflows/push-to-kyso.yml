@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Kyso push step
         id: kyso-push
-        uses: sto/kyso-push-action@v1.0.2
+        uses: sto/kyso-push-action@v1.0
         with:
           username: ${{ secrets.KYSO_USER_NAME }}
           token: ${{ secrets.KYSO_USER_TOKEN }}
