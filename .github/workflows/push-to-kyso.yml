@@ -12,3 +12,4 @@ jobs:
         uses: sto/kyso-push-action@v1.0.2
         with:
           username: ${{ secrets.KYSO_USER_NAME }}
+          token: ${{ secrets.KYSO_USER_TOKEN }}
