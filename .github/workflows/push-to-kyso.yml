@@ -3,14 +3,13 @@ on: [push]
 jobs:
   push-to-kyso:
     runs-on: ubuntu-latest
-    name: Job to push report to kyso
+    name: Job to push a report to kyso
     steps:
       - name: Clone repo step
         uses: actions/checkout@v3
       - name: Kyso push step
         id: kyso-push
-        uses: sto/kyso-push-action@v1
+        uses: sto/kyso-push-action@v1.0.1
         with:
-          install-url: 'https://kyso.io'
-          user-name: ${{ secrets.KYSO_USER_NAME }}
-          user-token: ${{ secrets.KYSO_USER_TOKEN }}
+          username: ${{ secrets.KYSO_USER_NAME }}
+          token: ${{ secrets.KYSO_USER_TOKEN }}
